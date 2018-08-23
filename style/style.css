@@ -1,0 +1,7 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  /*  fonte, cores de fundo e tamanho padrões são definidos em body, ou seja, num contexto mais
+   *  universal, podendo ser alterado com classes ou outros eventos
+   */
+
+}

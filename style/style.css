@@ -4,8 +4,35 @@ body {
   background-color: black;
 }
 
-.toperson img {
+.titulos {
+  background-color:#ef7c1a;
+  color: black;
+  font-size: 16px;
+  text-align: left;
+  padding: 1px 30px;
+}
 
+.nota {
+  background-color:#e58737;
+  float: left;
+  padding: 10px;
+  width:10%;
+}
+
+.nota h1 {
+  color: black;
+  padding: 5px;
+  font-size: 50px;
+  text-align: center;
+}
+.reviews{
+  color: black;
+  background-color: #e58737;
+  padding: 34px;
+  width: auto;
+
+}
+.toperson img {
   padding: 20px 20px;
   display: block;
   margin-left: auto;
@@ -60,4 +87,3 @@ body {
   color: white;
 
 }
-

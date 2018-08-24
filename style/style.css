@@ -1,7 +1,63 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  /*  fonte, cores de fundo e tamanho padrões são definidos em body, ou seja, num contexto mais
-   *  universal, podendo ser alterado com classes ou outros eventos
-   */
+  color: white;
+  background-color: black;
+}
+
+.toperson img {
+
+  padding: 20px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30%;
+  height:10%;
 
 }
+
+.fullbody {
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  width:70%;
+  margin-right: auto;
+}
+
+
+.navegador {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navegador ul{
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #0c0d0f;
+}
+
+.navegador li{
+  float: left;
+}
+
+.navegador li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navegador li a:hover:not(.selecionado){
+   background-color: #f9d5a4;
+   color: black;
+}
+
+.selecionado {
+  background-color: #ef7c1a;
+  color: white;
+
+}
+

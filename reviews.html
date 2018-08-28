@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <title>JoojNet</title>
+  <script src="scripts/joojscript.js" async> </script>
 </head>
 
 <body>
@@ -32,7 +33,27 @@
     <div class="nota">
       <h1>9.0</h1>
     </div>
-    <div class="reviews">
+    <div class="tabelasrev">
+      <table>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i> Ótima mistura de exploração, combates e quebra-cabeças.</td>
+          <td><i class="far fa-thumbs-down"></i>O game perde o rítmo em alguns momentos.</td>
+          </tr>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>Ambientes interessantes e repletos de tiradas bem-humoradas.</td>
+          <td><i class="far fa-thumbs-down"></i>Alguns pontos da história não chegam a ser concluídos.</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>Uma boa dose de desafios, especialmente nos momentos de plataforma.</td>
+          <td><i class="far fa-thumbs-down"></i>Antagonistas menos marcantes e desenvolvidos do que no game original.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="botaorev">
+      <button id="botao1" onclick="leiamais('review1', 'botao1')">Leia na íntegra</button>
+    </div>
+    <div class="reviews" id="review1">
+      <div>
       <h3>Guacamelee! 2 é uma ótima razão para vestir novamente a máscara de luchador</h3>
       <p>Sete anos após os eventos de Guacamelee!, Juan é um homem feliz e que se preocupa mais com sua família do que com as aventuras do passado.</p>
       <img src="images/guaca.png">
@@ -42,15 +63,12 @@
       <p>Nesse contexto, os diversos sábios Uay Chivo convocam o único Juan que restou para ele salvar o Mexiverse e parar os planos do vilão. Isso se traduz em uma nova aventura repleta de ação, momentos de plataforma desafiantes (alguns deles em nível que chega a ser irritantes), elementos da cultura mexicana e um humor ainda mais afiado — e que, embora diminua a quantidade de memes do antecessor, ainda os mantêm.</p>
       <img src="images/guaca2.png">
       <p>Guacamelee! 2 é uma sequência no sentido mais clássico da palavra: mantendo os elementos que consagraram o jogo original, ele expande seu universo para trazer uma história ainda mais surreal e cenários expandidos.<br>
-      O game oferece uma experiência bastante linear: para parar Salvador, você tem que impedi-lo de adquirir três artefatos mágicospara impedi-lo de concretizar seus planos. Conforme o jogador avança, ele encontra novas habilidades que melhoram suas capacidades de ataque ao mesmo tempo em que abrem mais formas de exploração.<br>
-      <h3>Pontos Positivos:</h3>
-      <p>Ótima mistura de exploração, combates e quebra-cabeças<br>
-      Ambientes interessantes e repletos de tiradas bem-humoradas<br>
-      Uma boa dose de desafios, especialmente nos momentos de plataforma</p>
-      <h3>Pontos Negativos:</h3>
-      <p>O game perde o ritmo em alguns momentos<br>
-      Alguns pontos da história não chegam a ser concluídos<br>
-      Antagonistas menos marcantes e desenvolvidos do que no game original</p>
+      O game oferece uma experiência bastante linear: para parar Salvador, você tem que impedi-lo de adquirir três artefatos mágicospara impedi-lo de concretizar seus planos. Conforme o jogador avança, ele encontra novas habilidades que melhoram suas capacidades de ataque ao mesmo tempo em que abrem mais formas de exploração.<br></p>
+
+      </div>
+      <div class="botaorev">
+        <button onclick="leiamenos('review1','botao1');">Esconder</button>
+      </div>
     </div>
     <br>
     <div class="titulos">
@@ -59,7 +77,27 @@
     <div class="nota">
       <h1>8.1</h1>
     </div>
-    <div class="reviews">
+    <div class="tabelasrev">
+      <table>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>Grande quantidade de veículos para o jogador.</td>
+          <td><i class="far fa-thumbs-up"></i>Sem lobbies PVP no lançamento.</td>
+          </tr>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>Cenários "cross-country" variados e ricos em detalhes.</td>
+          <td><i class="far fa-thumbs-up"></i>Não apresenta a experiência de simulador: O jogador deve procurar outro jogo dedicado para tal.</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>História melhorada em relação ao primeiro jogo.</td>
+          <!--<td><i class="far fa-thumbs-up"></i>negativo</td>-->
+        </tr>
+      </table>
+    </div>
+    <div class="botaorev">
+      <button id="botao2" onclick="leiamais('review2', 'botao2');">Leia na íntegra</button>
+    </div>
+    <div class="reviews" id="review2">
+      <div>
       <p>The Crew 2  é o novo game da franquia de corridas da Ubisoft para Xbox One, PC e PS4. O jogo traz uma proposta ousada de apresentar diversas categorias misturadas, onde é preciso se especializar não apenas em correr com carros e motos, mas também pilotar aviões, lanchas e os mais loucos veículos. Confira o nosso review completo:</p>
       <h3>Misturando tudo em um enorme mapa</h3>
       <p>Desde quando foi anunciado, The Crew 2 chama atenção por apresentar uma proposta diferente dos games de corrida convencionais: diversos tipos de veículos à disposição do jogador.</p>
@@ -73,6 +111,10 @@
       <h3>Conclusão:</h3>
       <p>The Crew 2 é um game que diverte por contar com elementos bem diversificados, mas que deixa a desejar em aspectos técnicos. Por mais que seja agradável pilotar um leque tão extenso de carros, lanchas e aviões, decepciona bastante a ambientação simples do jogo e os diversos bugs ao longo de sua jornada. </p>
     </div>
+    <div class="botaorev">
+      <button onclick="leiamenos('review2','botao2');">Esconder</button>
+    </div>
+    </div>
     <br>
     <div class="titulos">
       <h3>God of War</h3><!-- nome do jogo aqui -->
@@ -80,29 +122,54 @@
     <div class="nota">
       <h1>9.8</h1>
     </div>
-    <div class="reviews">
-      <p>God of War marca o retorno de uma das franquias mais famosas do mundo dos jogos. Exclusivo para PS4, o título traz de volta Kratos que, agora em uma versão mais velha, precisa lidar com a paternidade e antigos problemas que ressurgem do passado. Confira o review completo:</p>
-      <h3>"O Senhor da Guerra não gosta de crianças"</h3>
-      <p>Desde que foi anunciado, o novo God of War chama atenção por mostrar um lado mais humano de Kratos. Além da aparência mais velha, a presença de Atreus, seu filho, causou um enorme impacto, uma vez que o protagonista sempre carregou a fama de cruel e insensível nos outros títulos da saga.</p>
-      <img src="images/gow.png">
-      <p>Durante toda a (longa) jornada, o Deus da Guerra mostra, por muitas vezes, um lado paternal que entra em confronto com seu ego brutamontes - o que acaba ajudando na formação do "caráter de guerreiro" de seu filho. O seu jeito rude e impaciente é fundamental para que Atreus aflore seus instintos de sobrevivência e, ao mesmo tempo, descubra suas habilidades hereditárias.</p>
-      <p>Ao contrário do pai, Atreus mostra que a bondade é algo presente em seu sangue. A generosidade do garoto está presente desde a forma como ele lida com questionamentos até o jeito que trata outros personagens. A característica do filho acaba servindo de espelho para Kratos enfrentar situações de maneiras diferentes - se sozinho, o Deus da Guerra não agiria da mesma forma.</p>
-      <p>Isso é apenas o pano de fundo de uma trama que, embora demore muito para começar a se desenrolar, deixa os jogadores apreensivos a todo momento. É impossível não criar e recriar teorias, principalmente para aqueles que jogaram todos os títulos da franquia. </p>
-      <img src="images/gow2.png">
-      <h3>Mais que um filho, um aliado! </h3>
-      <p>Já nas primeiras notícias sobre o seu lançamento, era possível ver que a relação de pai e filho não ficava apenas na história. O game traz um inédito sistema de cooperação nunca antes visto na saga, fazendo com que a participação do pequeno guerreiro seja fundamental em praticamente todos os momentos.</p>
-      <p>No sistema de combate, do qual falaremos mais adiante, Atreus age como seu braço direito. Graças a uma dificuldade um pouco mais elevada que os títulos anteriores (como God of War 3 e God of War: Ascension), a todo momento será preciso utilizar o garoto para distrair e atordoar inimigos, ou contar com ele para curar e até ressuscitar Kratos.</p>
-      <img src="images/gow3.png">
-      <h3>Sistema de evolução com elementos de RPG</h3>
-      <p>Umas das grandes novidades do novo God of War é o seu sistema de evolução. O game traz alguns elementos similares a um RPG convencional, mas que não fazem com que ele perca suas origens. Em outras palavras, há um interessante sistema de troca de pontos de experiências por habilidades. Entretanto, eles são recebidos de uma forma limitada, não permitindo, por exemplo, que Kratos procure inimigos pelo cenário apenas para acumular pontos e adquirir movimentos.</p>
-      <p>O leque de ataques é extenso e variado para cada tipo de arma. Se nos outros títulos o progresso natural fazia com que Kratos adquirisse todas as habilidades disponíveis no jogo, no novo God of War é preciso escolher, pois dificilmente você conseguirá ter todos movimentos.</p>
-      <h3>Visual incrível</h3>
-      <p>O visual de God of War é de longe um dos mais belos da atual geração. Em nossos testes, o jogo rodou em um PS4 Pro junto a uma TV 4K com suporte à tecnologia HDR. Dessa forma, pudemos conferir todo o potencial gráfico que o game tem a oferecer.</p>
-      <p>Ele não decepcionou - pelo contrário. Mesmo acostumados a um nível gráfico avançado de títulos recentes no mundo dos games, God of War pode ser considerado como o melhor exclusivo do PS4 no quesito visual, superando jogos consagrados nesse quesito, como Uncharted: The Lost Legacy e Horizon Zero Dawn.</p>
-      <p>A começar pelos cenários, é incrível o nível de detalhamento do ambiente. Desde rochas cobertas com uma grande camada de neve, até uma vegetação rica e variada. Os efeitos de sombra e luz também impressionam, criando uma imersão nunca antes vista. </p>
-      <img src="images/gow4.png">
-      <h3>Conclusão:</h3>
-      <p>God of War, o jogo mais aguardado de 2018, chega de forma triunfal e coloca novamente a franquia no topo das atenções. Os receios em relação às mudanças se extinguem nas primeiras horas, mostrando como se mescla elementos que consagraram a franquia com inovações que caíram como uma luva. O jogo encanta tanto pela mecânica lendária, como pelos gráficos extraordinários. Kratos retorna ao trono com um título obrigatório para seus fãs.</p>
+    <div class="tabelasrev">
+      <table>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>Belíssimos gráficos e arte dos cenários.</td>
+          <td><i class="far fa-thumbs-down"></i>O <strong>MENINO</strong> pode atrapalhar em alguns casos.</td>
+          </tr>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>História rica que conta com bom detalhamento de acontecimentos da mitologia nórdica.</td>
+          <!--<td><i class="far fa-thumbs-down"></i>negativo</td>-->
+        </tr>
+        <tr>
+          <td><i class="far fa-thumbs-up"></i>Jogabilidade nova para a série, com fatores e sistemas de RPG bem implementados.</td>
+          <!--<td><i class="far fa-thumbs-down"></i>negativo</td>-->
+        </tr>
+      </table>
+    </div>
+    <div class="botaorev">
+      <button id="botao3" onclick="leiamais('review3', 'botao3');">Leia na íntegra</button>
+    </div>
+    <div class="reviews" id="review3">
+
+      <div>
+        <p>God of War marca o retorno de uma das franquias mais famosas do mundo dos jogos. Exclusivo para PS4, o título traz de volta Kratos que, agora em uma versão mais velha, precisa lidar com a paternidade e antigos problemas que ressurgem do passado. Confira o review completo:</p>
+        <h3>"O Senhor da Guerra não gosta de crianças"</h3>
+        <p>Desde que foi anunciado, o novo God of War chama atenção por mostrar um lado mais humano de Kratos. Além da aparência mais velha, a presença de Atreus, seu filho, causou um enorme impacto, uma vez que o protagonista sempre carregou a fama de cruel e insensível nos outros títulos da saga.</p>
+        <img src="images/gow.png">
+        <p>Durante toda a (longa) jornada, o Deus da Guerra mostra, por muitas vezes, um lado paternal que entra em confronto com seu ego brutamontes - o que acaba ajudando na formação do "caráter de guerreiro" de seu filho. O seu jeito rude e impaciente é fundamental para que Atreus aflore seus instintos de sobrevivência e, ao mesmo tempo, descubra suas habilidades hereditárias.</p>
+        <p>Ao contrário do pai, Atreus mostra que a bondade é algo presente em seu sangue. A generosidade do garoto está presente desde a forma como ele lida com questionamentos até o jeito que trata outros personagens. A característica do filho acaba servindo de espelho para Kratos enfrentar situações de maneiras diferentes - se sozinho, o Deus da Guerra não agiria da mesma forma.</p>
+        <p>Isso é apenas o pano de fundo de uma trama que, embora demore muito para começar a se desenrolar, deixa os jogadores apreensivos a todo momento. É impossível não criar e recriar teorias, principalmente para aqueles que jogaram todos os títulos da franquia. </p>
+        <img src="images/gow2.png">
+        <h3>Mais que um filho, um aliado! </h3>
+        <p>Já nas primeiras notícias sobre o seu lançamento, era possível ver que a relação de pai e filho não ficava apenas na história. O game traz um inédito sistema de cooperação nunca antes visto na saga, fazendo com que a participação do pequeno guerreiro seja fundamental em praticamente todos os momentos.</p>
+        <p>No sistema de combate, do qual falaremos mais adiante, Atreus age como seu braço direito. Graças a uma dificuldade um pouco mais elevada que os títulos anteriores (como God of War 3 e God of War: Ascension), a todo momento será preciso utilizar o garoto para distrair e atordoar inimigos, ou contar com ele para curar e até ressuscitar Kratos.</p>
+        <img src="images/gow3.png">
+        <h3>Sistema de evolução com elementos de RPG</h3>
+        <p>Umas das grandes novidades do novo God of War é o seu sistema de evolução. O game traz alguns elementos similares a um RPG convencional, mas que não fazem com que ele perca suas origens. Em outras palavras, há um interessante sistema de troca de pontos de experiências por habilidades. Entretanto, eles são recebidos de uma forma limitada, não permitindo, por exemplo, que Kratos procure inimigos pelo cenário apenas para acumular pontos e adquirir movimentos.</p>
+        <p>O leque de ataques é extenso e variado para cada tipo de arma. Se nos outros títulos o progresso natural fazia com que Kratos adquirisse todas as habilidades disponíveis no jogo, no novo God of War é preciso escolher, pois dificilmente você conseguirá ter todos movimentos.</p>
+        <h3>Visual incrível</h3>
+        <p>O visual de God of War é de longe um dos mais belos da atual geração. Em nossos testes, o jogo rodou em um PS4 Pro junto a uma TV 4K com suporte à tecnologia HDR. Dessa forma, pudemos conferir todo o potencial gráfico que o game tem a oferecer.</p>
+        <p>Ele não decepcionou - pelo contrário. Mesmo acostumados a um nível gráfico avançado de títulos recentes no mundo dos games, God of War pode ser considerado como o melhor exclusivo do PS4 no quesito visual, superando jogos consagrados nesse quesito, como Uncharted: The Lost Legacy e Horizon Zero Dawn.</p>
+        <p>A começar pelos cenários, é incrível o nível de detalhamento do ambiente. Desde rochas cobertas com uma grande camada de neve, até uma vegetação rica e variada. Os efeitos de sombra e luz também impressionam, criando uma imersão nunca antes vista. </p>
+        <img src="images/gow4.png">
+        <h3>Conclusão:</h3>
+        <p>God of War, o jogo mais aguardado de 2018, chega de forma triunfal e coloca novamente a franquia no topo das atenções. Os receios em relação às mudanças se extinguem nas primeiras horas, mostrando como se mescla elementos que consagraram a franquia com inovações que caíram como uma luva. O jogo encanta tanto pela mecânica lendária, como pelos gráficos extraordinários. Kratos retorna ao trono com um título obrigatório para seus fãs.</p>
+        <div class="botaorev">
+          <button onclick="leiamenos('review3','botao3');">Esconder</button>
+        </div>
+    </div>
   </div>
 
 </body>

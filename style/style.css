@@ -71,8 +71,32 @@ body {
   opacity: 0.8;
   font-family: 'Quicksand', sans-serif;
 }
+
 .botaorev button:hover{
   opacity: 1.0;
+
+}
+
+.botoesext {
+  color: black;
+  border: none;
+  background-color: #c12828;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
+  width: 18%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.8;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.botoesext:hover{
+  opacity: 1.0;
+
 
 }
 
@@ -99,7 +123,7 @@ body {
 }
 
 .toperson {
-  background-image: url("images/wpp.jpg");
+  background-image: url("wpp.jpg");
   padding: 20px 20px;
   display: block;
   margin-left: auto;

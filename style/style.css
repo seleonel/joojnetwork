@@ -3,11 +3,18 @@ body {
   color: white;
   background-color: black;
 }
+.comm{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 170px;
+
+}
 
 .titulos {
   background-color:#ef7c1a;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   padding: 1px 20px;
   width: 100%;

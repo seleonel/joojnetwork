@@ -144,16 +144,18 @@ body {
 }
 
 .toperson {
-  background-image: url("wpp.jpg");
-  background-repeat: no-repeat;
-  background-attachment:scroll;
-  background-size: 90%;
+  background:url(wpp.jpg) center center no-repeat scroll; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: 90%;
+background-size: 90%;
   padding: 20px 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width:90%;
   height:90%;
+  position: absolut4e;
 }
 
 .fullbody {

@@ -20,6 +20,16 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.bigtitulos {
+  background-color:#ef7c1a;
+  color: black;
+  font-size: 36px;
+  text-align: left;
+  padding: 1px 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
 
 
 .logo{
